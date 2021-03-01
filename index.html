@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-last-mod="01.03.2021:1">
 
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,7 @@
             width: 100%;
             top: 50%;
             text-align: center;
-            color: #0f0;
+            color: #fff;
             font-size: 300%;
             font-family: monospace;
             transform: translateY(-50%);
@@ -48,6 +48,14 @@
             font-size: 46px;
         }
         p {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 20px;
+        }
+        .divider {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 10px 0;
             font-size: 20px;
         }
 
@@ -56,6 +64,13 @@
             margin: 0 auto;
             max-width: 100%;
             cursor: pointer;
+        }
+
+        .tag {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 4px;
+            color: #0f0;
         }
 
         .hidden {
@@ -67,9 +82,10 @@
 <body>
     <main>
         <img src="./cat.gif" id="cat" class="hidden" alt="Лаконичное предупреждение">
-        <h2>iskudrat</h2>
+        <h2><i class="tag"></i>iskudrat<i class="tag close"></i></h2>
         <p><a href="mailto:iskudrat@gmail.com">iskudrat@gmail.com</a></p>
-        <p><a href="tel:+77086960995">+7 (708) 696 09-95</a></p>
+        <span class="divider">|</span>
+        <p><a href="tel:+77086960995">+7(708)696-09-95</a></p>
     </main>
     <canvas></canvas>
 
