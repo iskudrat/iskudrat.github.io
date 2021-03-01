@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-last-mod="01.03.2021:1">
+<html lang="ru" data-last-mod="01.03.2021:2">
 
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,7 @@
             width: 100%;
             top: 50%;
             text-align: center;
-            color: #fff;
+            color: #ddd;
             font-size: 300%;
             font-family: monospace;
             transform: translateY(-50%);
@@ -51,12 +51,14 @@
             display: inline-block;
             vertical-align: middle;
             font-size: 20px;
+            color: #ccc;
         }
         .divider {
             display: inline-block;
             vertical-align: middle;
-            padding: 10px 0;
+            padding: 0 6px;
             font-size: 20px;
+            color: #0f0;
         }
 
         img {
@@ -69,8 +71,15 @@
         .tag {
             display: inline-block;
             vertical-align: middle;
-            padding: 0 4px;
+            padding: 0 10px;
             color: #0f0;
+            font-style: normal;
+        }
+        .tag:after {
+            content: '<';
+        }
+        .tag.close:after {
+            content: '/>';
         }
 
         .hidden {
@@ -82,9 +91,9 @@
 <body>
     <main>
         <img src="./cat.gif" id="cat" class="hidden" alt="Лаконичное предупреждение">
-        <h2><i class="tag"></i>iskudrat<i class="tag close"></i></h2>
+        <h2><i class="tag"></i>Kudrat Smailov<i class="tag close"></i></h2>
         <p><a href="mailto:iskudrat@gmail.com">iskudrat@gmail.com</a></p>
-        <span class="divider">|</span>
+        <span class="divider">∴</span>
         <p><a href="tel:+77086960995">+7(708)696-09-95</a></p>
     </main>
     <canvas></canvas>
